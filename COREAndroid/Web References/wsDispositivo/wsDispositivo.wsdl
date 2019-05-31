@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="wsDispositivo" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://207.248.58.245:90/RACE.Services/wsDispositivo.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://207.248.58.245:90/RACE.Services/wsDispositivo.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://207.248.58.245:90/RACE.Services/wsDispositivo.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CapaEntidad" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IwsDispositivo_BuscarDispositivo_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarDispositivo" />
+  </wsdl:message>
+  <wsdl:message name="IwsDispositivo_BuscarDispositivo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarDispositivoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsDispositivo_GuardarDispositivo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarDispositivo" />
+  </wsdl:message>
+  <wsdl:message name="IwsDispositivo_GuardarDispositivo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarDispositivoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsDispositivo_EditarDispositivo_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarDispositivo" />
+  </wsdl:message>
+  <wsdl:message name="IwsDispositivo_EditarDispositivo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarDispositivoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsDispositivo_BajaDispositivo_InputMessage">
+    <wsdl:part name="parameters" element="tns:BajaDispositivo" />
+  </wsdl:message>
+  <wsdl:message name="IwsDispositivo_BajaDispositivo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BajaDispositivoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsDispositivo_BuscarDispositivoCuadrillero_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarDispositivoCuadrillero" />
+  </wsdl:message>
+  <wsdl:message name="IwsDispositivo_BuscarDispositivoCuadrillero_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarDispositivoCuadrilleroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsDispositivo_GuardarDispositivoCuadrillero_InputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarDispositivoCuadrillero" />
+  </wsdl:message>
+  <wsdl:message name="IwsDispositivo_GuardarDispositivoCuadrillero_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarDispositivoCuadrilleroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsDispositivo_BajaDispositivoCuadrillero_InputMessage">
+    <wsdl:part name="parameters" element="tns:BajaDispositivoCuadrillero" />
+  </wsdl:message>
+  <wsdl:message name="IwsDispositivo_BajaDispositivoCuadrillero_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BajaDispositivoCuadrilleroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsDispositivo_ConsultaTiempoReportarse_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultaTiempoReportarse" />
+  </wsdl:message>
+  <wsdl:message name="IwsDispositivo_ConsultaTiempoReportarse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultaTiempoReportarseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsDispositivo_GuardaUbicacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:GuardaUbicacion" />
+  </wsdl:message>
+  <wsdl:message name="IwsDispositivo_GuardaUbicacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GuardaUbicacionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IwsDispositivo">
+    <wsdl:operation name="BuscarDispositivo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsDispositivo/BuscarDispositivo" message="tns:IwsDispositivo_BuscarDispositivo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsDispositivo/BuscarDispositivoResponse" message="tns:IwsDispositivo_BuscarDispositivo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GuardarDispositivo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsDispositivo/GuardarDispositivo" message="tns:IwsDispositivo_GuardarDispositivo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsDispositivo/GuardarDispositivoResponse" message="tns:IwsDispositivo_GuardarDispositivo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarDispositivo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsDispositivo/EditarDispositivo" message="tns:IwsDispositivo_EditarDispositivo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsDispositivo/EditarDispositivoResponse" message="tns:IwsDispositivo_EditarDispositivo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BajaDispositivo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsDispositivo/BajaDispositivo" message="tns:IwsDispositivo_BajaDispositivo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsDispositivo/BajaDispositivoResponse" message="tns:IwsDispositivo_BajaDispositivo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarDispositivoCuadrillero">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsDispositivo/BuscarDispositivoCuadrillero" message="tns:IwsDispositivo_BuscarDispositivoCuadrillero_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsDispositivo/BuscarDispositivoCuadrilleroResponse" message="tns:IwsDispositivo_BuscarDispositivoCuadrillero_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GuardarDispositivoCuadrillero">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsDispositivo/GuardarDispositivoCuadrillero" message="tns:IwsDispositivo_GuardarDispositivoCuadrillero_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsDispositivo/GuardarDispositivoCuadrilleroResponse" message="tns:IwsDispositivo_GuardarDispositivoCuadrillero_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BajaDispositivoCuadrillero">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsDispositivo/BajaDispositivoCuadrillero" message="tns:IwsDispositivo_BajaDispositivoCuadrillero_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsDispositivo/BajaDispositivoCuadrilleroResponse" message="tns:IwsDispositivo_BajaDispositivoCuadrillero_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaTiempoReportarse">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsDispositivo/ConsultaTiempoReportarse" message="tns:IwsDispositivo_ConsultaTiempoReportarse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsDispositivo/ConsultaTiempoReportarseResponse" message="tns:IwsDispositivo_ConsultaTiempoReportarse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GuardaUbicacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsDispositivo/GuardaUbicacion" message="tns:IwsDispositivo_GuardaUbicacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsDispositivo/GuardaUbicacionResponse" message="tns:IwsDispositivo_GuardaUbicacion_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IwsDispositivo" type="tns:IwsDispositivo">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BuscarDispositivo">
+      <soap:operation soapAction="http://tempuri.org/IwsDispositivo/BuscarDispositivo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GuardarDispositivo">
+      <soap:operation soapAction="http://tempuri.org/IwsDispositivo/GuardarDispositivo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditarDispositivo">
+      <soap:operation soapAction="http://tempuri.org/IwsDispositivo/EditarDispositivo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BajaDispositivo">
+      <soap:operation soapAction="http://tempuri.org/IwsDispositivo/BajaDispositivo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarDispositivoCuadrillero">
+      <soap:operation soapAction="http://tempuri.org/IwsDispositivo/BuscarDispositivoCuadrillero" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GuardarDispositivoCuadrillero">
+      <soap:operation soapAction="http://tempuri.org/IwsDispositivo/GuardarDispositivoCuadrillero" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BajaDispositivoCuadrillero">
+      <soap:operation soapAction="http://tempuri.org/IwsDispositivo/BajaDispositivoCuadrillero" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaTiempoReportarse">
+      <soap:operation soapAction="http://tempuri.org/IwsDispositivo/ConsultaTiempoReportarse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GuardaUbicacion">
+      <soap:operation soapAction="http://tempuri.org/IwsDispositivo/GuardaUbicacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsDispositivo">
+    <wsdl:port name="BasicHttpBinding_IwsDispositivo" binding="tns:BasicHttpBinding_IwsDispositivo">
+      <soap:address location="http://207.248.58.245:90/RACE.Services/wsDispositivo.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/HeaderBar">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="35.0dp"
+        android:gravity="left"
+        android:id="@+id/Layout_Title">
+        <ImageButton
+            android:id="@+id/BtnRegresar"
+            android:src="@drawable/BACK"
+            android:layout_width="37dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:layout_height="35dp" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="MAPA     "
+            android:id="@+id/LblTituloPantalla"
+            android:gravity="center"
+            android:textSize="25.0dp"
+            android:layout_marginLeft="0.0dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="15.0dp"
+        android:gravity="left"
+        android:id="@+id/linearLayout1"
+        android:layout_marginBottom="0.1dp"
+        android:background="@drawable/Line_Blue" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="20.0dp"
+            android:gravity="center"
+            android:id="@+id/linearLayout1"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="TC013470-021-00110-1"
+                android:id="@+id/LblOrdenActual"
+                android:gravity="center"
+                styles="@style/TextView" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="350.0dp"
+            android:gravity="center"
+            android:id="@+id/linearLayout1"
+            android:layout_marginBottom="1dp">
+            <FrameLayout
+                android:id="@+id/mapWithOverlay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dp"
+            android:gravity="center"
+            android:id="@+id/linearLayout1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="A - Punto de origen"
+                android:gravity="left" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="B - Punto de destino"
+                android:gravity="left" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://207.248.58.245:90/RACE.Services/wsDispositivo.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CapaEntidad" />
+  <xs:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+  <xs:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+  <xs:element name="BuscarDispositivo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CapaEntidad" minOccurs="0" name="Dispositivo" nillable="true" type="q1:Dispositivo" />
+        <xs:element minOccurs="0" name="Disp_Activo" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarDispositivoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CapaEntidad" minOccurs="0" name="BuscarDispositivoResult" nillable="true" type="q2:ArrayOfDispositivo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarDispositivo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CapaEntidad" minOccurs="0" name="Dispositivo" nillable="true" type="q3:Dispositivo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarDispositivoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/CapaEntidad" minOccurs="0" name="GuardarDispositivoResult" nillable="true" type="q4:Dispositivo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditarDispositivo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/CapaEntidad" minOccurs="0" name="Dispositivo" nillable="true" type="q5:Dispositivo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditarDispositivoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EditarDispositivoResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BajaDispositivo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_DispStr" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Disp_Id_UMod" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BajaDispositivoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BajaDispositivoResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarDispositivoCuadrillero">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Disp" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarDispositivoCuadrilleroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/CapaEntidad" minOccurs="0" name="BuscarDispositivoCuadrilleroResult" nillable="true" type="q6:ArrayOfDispositivo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarDispositivoCuadrillero">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/CapaEntidad" minOccurs="0" name="DispositivoCuadrillero" nillable="true" type="q7:Dispositivo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarDispositivoCuadrilleroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/CapaEntidad" minOccurs="0" name="GuardarDispositivoCuadrilleroResult" nillable="true" type="q8:Dispositivo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BajaDispositivoCuadrillero">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_DispCua" type="xs:int" />
+        <xs:element minOccurs="0" name="DispCua_Id_UMod" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BajaDispositivoCuadrilleroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BajaDispositivoCuadrilleroResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultaTiempoReportarse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="disp_numero" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultaTiempoReportarseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/CapaEntidad" minOccurs="0" name="ConsultaTiempoReportarseResult" nillable="true" type="q9:TiempoReportarse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardaUbicacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/CapaEntidad" minOccurs="0" name="ubicacion" nillable="true" type="q10:DispositivoUbicacion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardaUbicacionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GuardaUbicacionResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

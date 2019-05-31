@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/HeaderBar">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dp"
+        android:gravity="left"
+        android:id="@+id/Layout_Title">
+        <ImageButton
+            android:id="@+id/BtnRegresar"
+            android:src="@drawable/BACK"
+            android:layout_width="37dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:layout_height="35dp" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="titulo"
+            android:id="@+id/LblTituloPantalla"
+            android:gravity="left"
+            android:textSize="25.0dp"
+            android:layout_marginLeft="12.0dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="15.0dp"
+        android:gravity="left"
+        android:id="@+id/linearLayout1"
+        android:layout_marginBottom="0.5dp"
+        android:background="@drawable/Line_Blue" />
+<!--********************************Actividad***********************************************-->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginLeft="8.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="&gt; Actividad"
+                    android:id="@+id/LblActividad"
+                    android:gravity="left"
+                    styles="@style/TextView" />
+            </LinearLayout>
+        <!--********************************Descripcion Actividad********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginLeft="18.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/LblActividadData"
+                    android:gravity="left"
+                    android:textColor="#0489B1"
+                    styles="@style/TextViewODT"
+                    android:layout_marginLeft="0.0dp"
+                    android:layout_marginRight="0.0dp" />
+            </LinearLayout>
+        <!--********************************Numero de Vista********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginLeft="8.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="&gt; Número de vista"
+                    android:id="@+id/LblNumeroDeVista"
+                    android:gravity="left"
+                    styles="@style/TextView" />
+            </LinearLayout>
+        <!--********************************Descripcion Numero de Vista********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginLeft="18.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/LblNumeroDeVistaData"
+                    android:gravity="left"
+                    android:textColor="#0489B1"
+                    styles="@style/TextViewODT"
+                    android:layout_marginLeft="0.0dp"
+                    android:layout_marginRight="0.0dp" />
+            </LinearLayout>
+        <!--********************************Direccion********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginLeft="8.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="&gt; Dirección"
+                    android:id="@+id/LblDireccion"
+                    android:gravity="left"
+                    styles="@style/TextView" />
+            </LinearLayout>
+        <!--********************************Descripcion Direccion********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginLeft="18.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/LblDireccionData"
+                    android:gravity="left"
+                    android:textColor="#0489B1"
+                    styles="@style/TextViewODT"
+                    android:layout_marginLeft="0.0dp"
+                    android:layout_marginRight="0.0dp" />
+            </LinearLayout>
+        <!--********************************Ciudad********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginLeft="8.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="&gt; Ciudad"
+                    android:id="@+id/LblCiudad"
+                    android:gravity="left"
+                    styles="@style/TextView" />
+            </LinearLayout>
+        <!--********************************Descripcion Ciudad********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginLeft="18.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/LblCiudadData"
+                    android:gravity="left"
+                    android:textColor="#0489B1"
+                    styles="@style/TextViewODT"
+                    android:layout_marginLeft="0.0dp"
+                    android:layout_marginRight="0.0dp" />
+            </LinearLayout>
+        <!--********************************Medidas********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginLeft="8.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="&gt; Medidas"
+                    android:id="@+id/LblMedidas"
+                    android:gravity="left"
+                    styles="@style/TextView" />
+            </LinearLayout>
+        <!--********************************Descripcion Medidas********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginLeft="18.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/LblMedidasData"
+                    android:gravity="left"
+                    android:textColor="#0489B1"
+                    styles="@style/TextViewODT"
+                    android:layout_marginLeft="0.0dp"
+                    android:layout_marginRight="0.0dp" />
+            </LinearLayout>
+        <!--********************************Version********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginLeft="8.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="&gt; Versión"
+                    android:id="@+id/LblVersion"
+                    android:gravity="left"
+                    styles="@style/TextView" />
+            </LinearLayout>
+        <!--********************************Desripcion Version********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginLeft="18.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/LblVersionData"
+                    android:gravity="left"
+                    android:textColor="#0489B1"
+                    styles="@style/TextViewODT"
+                    android:layout_marginLeft="0.0dp"
+                    android:layout_marginRight="0.0dp" />
+            </LinearLayout>
+        <!--********************************Luz********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginLeft="8.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="&gt; Luz"
+                    android:id="@+id/LblLuz"
+                    android:gravity="left"
+                    styles="@style/TextView" />
+            </LinearLayout>
+        <!--********************************Desripcion Luz********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginLeft="18.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/LblLuzData"
+                    android:gravity="left"
+                    android:textColor="#0489B1"
+                    styles="@style/TextViewODT"
+                    android:layout_marginLeft="0.0dp"
+                    android:layout_marginRight="0.0dp" />
+            </LinearLayout>
+        <!--********************************Numero de Vista Reeubicacion********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginLeft="8.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="&gt; Número de vista destino"
+                    android:id="@+id/LblNumeroDeVistareubicacion"
+                    android:gravity="left"
+                    styles="@style/TextView" />
+            </LinearLayout>
+        <!--********************************Descripcion numero vista reeubicacion********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginLeft="18.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/LblNumeroDeVistareubicacionData"
+                    android:gravity="left"
+                    android:textColor="#0489B1"
+                    styles="@style/TextViewODT"
+                    android:layout_marginLeft="0.0dp"
+                    android:layout_marginRight="0.0dp" />
+            </LinearLayout>
+        <!--********************************Direccion reubicacion********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginLeft="8.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="&gt; Dirección destino"
+                    android:id="@+id/LblDireccionreubicacion"
+                    android:gravity="left"
+                    styles="@style/TextView" />
+            </LinearLayout>
+        <!--********************************Descripcion Direccion reubicacion********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginLeft="18.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/LblDireccionreubicacionData"
+                    android:gravity="left"
+                    android:textColor="#0489B1"
+                    styles="@style/TextViewODT"
+                    android:layout_marginLeft="0.0dp"
+                    android:layout_marginRight="0.0dp" />
+            </LinearLayout>
+        <!--********************************Ciudad destino********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginLeft="8.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="&gt; Ciudad destino"
+                    android:id="@+id/LblCiudadDestino"
+                    android:gravity="left"
+                    styles="@style/TextView" />
+            </LinearLayout>
+        <!--********************************Descripcion Ciudad destino********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginLeft="18.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/LblCiudadDestinoData"
+                    android:gravity="left"
+                    android:textColor="#0489B1"
+                    styles="@style/TextViewODT"
+                    android:layout_marginLeft="0.0dp"
+                    android:layout_marginRight="0.0dp" />
+            </LinearLayout>
+        <!--********************************Medidas Destino********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginLeft="8.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="&gt; Medidas destino"
+                    android:id="@+id/LblMedidasDestino"
+                    android:gravity="left"
+                    styles="@style/TextView" />
+            </LinearLayout>
+        <!--********************************Descripcion Medidas Destino********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginLeft="18.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/LblMedidasDestinoData"
+                    android:gravity="left"
+                    android:textColor="#0489B1"
+                    styles="@style/TextViewODT"
+                    android:layout_marginLeft="0.0dp"
+                    android:layout_marginRight="0.0dp" />
+            </LinearLayout>
+        <!--********************************Instrucciones Adicionales ********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginLeft="8.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="&gt; Instrucciones adicionales"
+                    android:id="@+id/LblAdicionales"
+                    android:gravity="left"
+                    styles="@style/TextView" />
+            </LinearLayout>
+        <!--********************************Descripcion Instrucciones Adicionales********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/linearLayout1"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginLeft="18.0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/LblAdicionalesData"
+                    android:gravity="left"
+                    android:textColor="#0489B1"
+                    styles="@style/TextViewODT"
+                    android:layout_marginLeft="0.0dp"
+                    android:layout_marginRight="0.0dp" />
+            </LinearLayout>
+        <!--********************************Boton Ver Mapa********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginTop="10.0dp"
+                android:layout_marginLeft="14.0dp"
+                android:layout_marginRight="14.0dp">
+                <Button
+                    android:background="@drawable/Blue_Button"
+                    android:text="VER MAPA"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/BtnVerMapa"
+                    android:clickable="true"
+                    style="@style/button_text"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+        <!--********************************Boton Iniciar********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginLeft="14.0dp"
+                android:layout_marginRight="14.0dp">
+                <Button
+                    android:background="@drawable/Blue_Button"
+                    android:text="FINALIZAR ODT"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/BtnIniciar"
+                    android:clickable="true"
+                    style="@style/button_text"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+        <!--********************************Boton Posponer ODT********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:id="@+id/linearLayoutBtnPosponer"
+                android:layout_marginLeft="14.0dp"
+                android:layout_marginRight="14.0dp">
+                <Button
+                    android:background="@drawable/Blue_Button"
+                    android:text="POSPONER ODT"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/BtnPosponer"
+                    android:clickable="true"
+                    style="@style/button_text"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+        <!--********************************Boton Pre cancelar ODT********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginLeft="14.0dp"
+                android:layout_marginRight="14.0dp">
+                <Button
+                    android:background="@drawable/Blue_Button"
+                    android:text="CANCELAR ODT"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/BtnCancelar"
+                    android:clickable="true"
+                    style="@style/button_text"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/HeaderBar">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="35.0dp"
+        android:gravity="left"
+        android:id="@+id/Layout_Title">
+        <ImageButton
+            android:id="@+id/BtnRegresar"
+            android:src="@drawable/BACK"
+            android:layout_width="37dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:layout_height="35dp" />
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="CANCELAR"
+            android:id="@+id/LblTituloPantalla"
+            android:gravity="center"
+            android:textSize="25.0dp"
+            android:layout_marginLeft="0.0dp" />
+        <ImageButton
+            android:id="@+id/BtnCamara"
+            android:src="@drawable/CamaraF"
+            android:layout_width="37dp"
+            android:layout_height="35dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="15.0dp"
+        android:gravity="left"
+        android:id="@+id/linearLayout1"
+        android:layout_marginBottom="0.1dp"
+        android:background="@drawable/Line_Blue" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="20.0dp"
+                android:gravity="center"
+                android:id="@+id/linearLayout1"
+                android:layout_marginBottom="2dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TC013470-021-00110-1"
+                    android:id="@+id/LblOrdenActual"
+                    android:gravity="center"
+                    styles="@style/TextView" />
+            </LinearLayout>
+        <!--********************************Boton Error Medidas********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginLeft="14.0dp"
+                android:layout_marginRight="14.0dp">
+                <Button
+                    android:background="@drawable/Blue_Button"
+                    android:text="ERROR MEDIDAS"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/BtnMedidas"
+                    android:clickable="true"
+                    style="@style/button_text"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+        <!--********************************Boton Clausurado********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginLeft="14.0dp"
+                android:layout_marginRight="14.0dp">
+                <Button
+                    android:background="@drawable/Blue_Button"
+                    android:text="CLAUSURADO"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/BtnClausurado"
+                    android:clickable="true"
+                    style="@style/button_text"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+        <!--********************************Boton Arrendamiento********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginLeft="14.0dp"
+                android:layout_marginRight="14.0dp">
+                <Button
+                    android:background="@drawable/Blue_Button"
+                    android:text="PROBLEMA ARRENDAMIENTO"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/BtnArrendamiento"
+                    android:clickable="true"
+                    style="@style/button_text"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+        <!--********************************Boton 	Arte Defectuoso********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginLeft="14.0dp"
+                android:layout_marginRight="14.0dp"
+                android:layout_marginBottom="0.0dp">
+                <Button
+                    android:background="@drawable/Blue_Button"
+                    android:text="ARTE DEFECTUOSO"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/BtnArte"
+                    android:clickable="true"
+                    style="@style/button_text"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+        <!--********************************Boton Otros********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginLeft="14.0dp"
+                android:layout_marginRight="14.0dp"
+                android:layout_marginBottom="5.0dp">
+                <Button
+                    android:background="@drawable/Blue_Button"
+                    android:text="OTROS"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/BtnOtros"
+                    android:clickable="true"
+                    style="@style/button_text"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="11.0dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginLeft="19.0dp"
+                android:layout_marginRight="19.0dp"
+                android:layout_marginBottom="2.0dp">
+                <TextView
+                    android:text="Comentarios"
+                    android:id="@+id/LblComentarios"
+                    android:gravity="left"
+                    android:textSize="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="11dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginLeft="19.0dp"
+                android:layout_marginRight="19.0dp"
+                android:layout_marginBottom="2.0dp">
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/TxtComentarios"
+                    android:lines="5"
+                    android:singleLine="false"
+                    android:background="@drawable/TextEdit_Multiline"
+                    style="@style/StyleMultiline"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginLeft="14.0dp"
+                android:layout_marginRight="14.0dp">
+                <Button
+                    android:background="@drawable/Blue_Button"
+                    android:text="FOTOGRAFÍA DE EVIDENCIA"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/BtnFotografiaEvidencia"
+                    android:clickable="true"
+                    style="@style/button_text"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="11.0dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginLeft="14.0dp"
+                android:layout_marginRight="19.0dp"
+                android:layout_marginBottom="2.0dp">
+                <TextView
+                    android:text="Sin foto"
+                    android:id="@+id/LblInfoFoto"
+                    android:gravity="right"
+                    android:textSize="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35.5dp" />
+            </LinearLayout>
+        <!--********************************Boton PRE CANCELAR ODT********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginLeft="14.0dp"
+                android:layout_marginRight="14.0dp">
+                <Button
+                    android:background="@drawable/Blue_Button"
+                    android:text="CANCELAR ODT"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/BtnCancelarODT"
+                    android:clickable="true"
+                    style="@style/button_text"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CapaEntidad" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CapaEntidad" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+  <xs:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+  <xs:complexType name="Dispositivo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DispCua_FAsignacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DispCua_FDesAsignacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DispCua_Id_UCreo" type="xs:int" />
+      <xs:element minOccurs="0" name="DispCua_Id_UMod" type="xs:int" />
+      <xs:element minOccurs="0" name="DispCua_Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Disp_Activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Disp_ActivoStr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Disp_IMEI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Disp_Id_UCreo" type="xs:int" />
+      <xs:element minOccurs="0" name="Disp_Id_UMod" type="xs:int" />
+      <xs:element minOccurs="0" name="Disp_Modelo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Disp_Numero" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Cua" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_Disp" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_DispCua" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_Reportarse" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_ReportarseStr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Suc" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_SucStr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_TAsignacion" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_TAsignacionStr" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Dispositivo" nillable="true" type="tns:Dispositivo" />
+  <xs:complexType name="ArrayOfDispositivo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Dispositivo" nillable="true" type="tns:Dispositivo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDispositivo" nillable="true" type="tns:ArrayOfDispositivo" />
+  <xs:complexType name="TiempoReportarse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id_Dispositivo" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_Reportarse" type="xs:int" />
+      <xs:element minOccurs="0" name="Reportarse_Activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Reportarse_Tiempo" type="xs:int" />
+      <xs:element minOccurs="0" name="Reportarse_TiempoStr" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TiempoReportarse" nillable="true" type="tns:TiempoReportarse" />
+  <xs:complexType name="DispositivoUbicacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DispU_FCreo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DispU_Latitud" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DispU_Longitud" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Id_Cua" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_Disp" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DispositivoUbicacion" nillable="true" type="tns:DispositivoUbicacion" />
+</xs:schema>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/HeaderBar">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="35.0dp"
+        android:gravity="left"
+        android:id="@+id/Layout_Title">
+        <ImageButton
+            android:id="@+id/BtnRegresar"
+            android:src="@drawable/BACK"
+            android:layout_width="37dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:layout_height="35dp" />
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="FINALIZAR"
+            android:id="@+id/LblTituloPantalla"
+            android:gravity="center"
+            android:textSize="25.0dp"
+            android:layout_marginLeft="0.0dp" />
+        <ImageButton
+            android:id="@+id/BtnCamara"
+            android:src="@drawable/CamaraF"
+            android:layout_width="37dp"
+            android:layout_height="35dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="15.0dp"
+        android:gravity="left"
+        android:id="@+id/linearLayout1"
+        android:layout_marginBottom="0.1dp"
+        android:background="@drawable/Line_Blue" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="35.0dp"
+                android:gravity="center"
+                android:id="@+id/linearLayout1"
+                android:layout_marginBottom="15dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TC013470-021-00110-1"
+                    android:id="@+id/lblOrdenActual"
+                    android:gravity="center"
+                    styles="@style/TextView" />
+            </LinearLayout>
+        <!--********************************Boton Fotografia Detalle********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginLeft="14.0dp"
+                android:layout_marginRight="14.0dp">
+                <Button
+                    android:background="@drawable/Blue_Button"
+                    android:text="FOTOGRAFÍA DETALLE"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/BtnFotografiaDetalle"
+                    android:clickable="true"
+                    style="@style/button_text"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="14.0dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginLeft="14.0dp"
+                android:layout_marginRight="19.0dp">
+                <TextView
+                    android:text="Sin foto"
+                    android:id="@+id/LblInfoFotoDetalle"
+                    android:gravity="right"
+                    android:textSize="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="14dp" />
+            </LinearLayout>
+        <!--********************************Boton Fotografia Mediana********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginLeft="14.0dp"
+                android:layout_marginRight="14.0dp">
+                <Button
+                    android:background="@drawable/Blue_Button"
+                    android:text="FOTOGRAFÍA MEDIANA"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/BtnFotografiaMediana"
+                    android:clickable="true"
+                    style="@style/button_text"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="14.0dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginLeft="14.0dp"
+                android:layout_marginRight="19.0dp">
+                <TextView
+                    android:text="Sin foto"
+                    android:id="@+id/LblInfoFotoMediana"
+                    android:gravity="right"
+                    android:textSize="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="14dp" />
+            </LinearLayout>
+        <!--********************************Boton Fotografia Larga********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginLeft="14.0dp"
+                android:layout_marginRight="14.0dp">
+                <Button
+                    android:background="@drawable/Blue_Button"
+                    android:text="FOTOGRAFÍA LARGA"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/BtnFotografiaLarga"
+                    android:clickable="true"
+                    style="@style/button_text"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="14.0dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginLeft="14.0dp"
+                android:layout_marginRight="19.0dp"
+                android:layout_marginBottom="15.0dp">
+                <TextView
+                    android:text="Sin foto"
+                    android:id="@+id/LblInfoFotoLarga"
+                    android:gravity="right"
+                    android:textSize="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="14dp" />
+            </LinearLayout>
+        <!-- Comentarios-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="18.0dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginLeft="19.0dp"
+                android:layout_marginRight="19.0dp"
+                android:layout_marginBottom="2.0dp">
+                <TextView
+                    android:text="Comentarios"
+                    android:id="@+id/LblComentarios"
+                    android:gravity="left"
+                    android:textSize="14dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="18dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="90.0dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginLeft="19.0dp"
+                android:layout_marginRight="19.0dp"
+                android:layout_marginBottom="15.0dp">
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/TxtComentarios"
+                    android:lines="5"
+                    android:singleLine="false"
+                    android:background="@drawable/TextEdit_Multiline"
+                    style="@style/StyleMultiline"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+        <!--********************************Boton Finalizar********************************-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginLeft="14.0dp"
+                android:layout_marginRight="14.0dp">
+                <Button
+                    android:background="@drawable/Blue_Button"
+                    android:text="FINALIZAR ODT"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/BtnFinalizar"
+                    android:clickable="true"
+                    style="@style/button_text"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
